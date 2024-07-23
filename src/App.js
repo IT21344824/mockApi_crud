@@ -1,25 +1,18 @@
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import ProductslistPG from './pages/Productlist_PG';
-import AddProdcut from './pages/AddProdcut_Page';
-import EditProdcut from './pages/EditProdcut_Page';
-
-
-
+import AddProdcut_Page from './pages/AddProdcut_Page';
+import EditProdcut_Page from './pages/EditProdcut_Page';
+import Layout_1 from './layouts/Layout_1';
 
 function App() {
   return (
-    
     <BrowserRouter>
       <Routes>
-        <Route  path="/">         
-
-          {/* <Route path="Employees" > */}
-            <Route index element={ <ProductslistPG />} />
-            <Route path="/add" element={ <AddProdcut />} />
-            <Route path="/edit/:id" element={ <EditProdcut />} />
-
-          {/* </Route> */}
+        <Route path="/" element={<Layout_1 />}>
+          <Route index element={<ProductslistPG />} />
+          <Route path="add" element={<AddProdcut_Page />} />
+          <Route path="edit/:id" element={<EditProdcut_Page />} />
         </Route>
       </Routes>
     </BrowserRouter>

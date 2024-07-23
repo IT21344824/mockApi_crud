@@ -1,13 +1,12 @@
 import React from 'react'
-import Productslist from '../components/Productlist';
+import Productslist from '../components/product_comps/Productlist';
 import { Link } from "react-router-dom";
-import Navbar from '../layouts/Navbar'
 
 
 const Productlist_PG = () => {
     return (
-        <div >
-        <Navbar />
+     
+
         <div className="flex justify-center items-center mt-10 flex-col">
          
             <div className="flex mb-10">
@@ -19,7 +18,7 @@ const Productlist_PG = () => {
            
             <Productslist />
         </div>
-        </div>
+       
     )
 }
 
