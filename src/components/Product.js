@@ -10,9 +10,10 @@ const Product = ({ product , onDelete  }) => {
       <td class="px-6 py-4">{product.text}</td>
       <td class="px-6 py-4">
         <NavLink to={`/edit/${product.id}`}>
-          <button className="btn btn-primary mr-3">Edit</button>
+          <button className="btn btn-primary mr-3 p-1 hover:text-slate-950 text-gray-600 bg-green-400 hover:bg-green-300  rounded"
+          >Edit</button>
         </NavLink>
-        <button className="btn btn-primary" onClick={() => onDelete(product.id)}>Delete</button>
+        <button className="btn btn-primary p-1 hover:text-slate-950 text-gray-600 bg-red-400 hover:bg-red-300 rounded" onClick={() => onDelete(product.id)}>Delete</button>
       </td>
     </tr>
   );

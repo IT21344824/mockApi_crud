@@ -1,7 +1,9 @@
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
 import './App.css';
 import ProductslistPG from './pages/Productlist_PG';
-import AddProdcut from './components/AddProdcut';
+import AddProdcut from './pages/AddProdcut_Page';
+import EditProdcut from './pages/EditProdcut_Page';
+
 
 
 
@@ -15,7 +17,7 @@ function App() {
           {/* <Route path="Employees" > */}
             <Route index element={ <ProductslistPG />} />
             <Route path="/add" element={ <AddProdcut />} />
-            <Route path="/edit/:id" element={ <ProductslistPG />} />
+            <Route path="/edit/:id" element={ <EditProdcut />} />
 
           {/* </Route> */}
         </Route>
