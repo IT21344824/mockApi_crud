@@ -2,34 +2,11 @@ import React from 'react'
 
 const Sidebar = () => {
     return (
-        <div>
+        <div className=''>
 
 
-            <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-                <div class="px-3 py-3 lg:px-5 lg:pl-3 ">
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center justify-start rtl:justify-end">
-                          
-                            <a href="#" class="flex ms-2 md:me-24">
-                                <img src="/logo.png" class="h-8 me-3" alt="Logo" />
-                                <span class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Website</span>
-                            </a>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="flex items-center ms-3">
-                                <div>
-                                    <button type="button" class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" data-dropdown-toggle="dropdown-user">
-                                        <img class="w-8 h-8 rounded-full bg-white" src="/profile.png" alt="user photo" />
-                                    </button>
-                                </div>
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-            <aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700" aria-label="Sidebar">
+            <aside id="logo-sidebar" class="w-64 h-screen pt-20  transition-transform -translate-x-full
+               bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700" aria-label="Sidebar">
                 <div class="flex flex-col h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800 justify-between">
                     <ul class="space-y-2 font-medium">
                         <li>

@@ -1,51 +1,37 @@
 import React, { useState } from 'react';
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
-    return (
-        <div className='bg-slate-400'>
-            <nav className="flex justify-between items-center px-8 py-6">
-                <a href="#" className="flex items-center">
-                    <img src="https://marineinsurer.co.uk/wp-content/uploads/2020/05/logo-dummy.png"
-                        className="h-8 mr-3 bg-green-500" alt="Logo" />
-                    <span className="text-2xl font-bold whitespace-nowrap dark:text-white">Name</span>
-                </a>
-                <div className="md:hidden">
-                    <button onClick={toggleMenu} className="text-gray-500 focus:outline-none">
-                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}></path>
-                        </svg>
-                    </button>
+  return (
+    <div>
+      <nav className="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+        <div className="px-3 py-3 lg:px-5 lg:pl-3">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center justify-start rtl:justify-end">
+              <a href="#" className="flex ms-2 md:me-24">
+                <img src="/logo.png" className="h-8 me-3" alt="Logo" />
+                <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Website</span>
+              </a>
+            </div>
+            <div className="flex items-center">
+              <div className="flex items-center ms-3">
+                <div>
+                  <button type="button" className="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" data-dropdown-toggle="dropdown-user">
+                    <img className="w-8 h-8 rounded-full bg-white" src="/profile.png" alt="user photo" />
+                  </button>
                 </div>
-                <div className={`md:flex md:items-center  md:space-x-8 ${isOpen ? 'block' : 'hidden'}`}>
-                    <ul className="flex flex-col md:flex-row md:items-center md:space-x-8 mt-4 md:mt-0 mx-auto">
-                        <li className="py-2 md:py-0">
-                            <a href="#" className="block px-4 py-2 hover:bg-gray-300 rounded">Home</a>
-                        </li>
-                        <li className="py-2 md:py-0">
-                            <a href="#" className="block px-4 py-2 hover:bg-gray-300 rounded">About</a>
-                        </li>
-                        <li className="py-2 md:py-0">
-                            <a href="#" className="block px-4 py-2 hover:bg-gray-300 rounded">Contact</a>
-                        </li>
-                    </ul>
-                    <ul className="flex flex-col md:flex-row md:items-center md:space-x-4 mt-4 md:mt-0 md:ml-auto">
-                        <li className="py-2 md:py-0">
-                            <a href="#" className="block px-4 py-2 hover:bg-gray-300 rounded">Profile</a>
-                        </li>
-                        <li className="py-2 md:py-0">
-                            <a href="#" className="block px-4 py-2 hover:bg-gray-300 rounded">Settings</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+              </div>
+            </div>
+          </div>
         </div>
-    );
+      </nav>
+    </div>
+  );
 };
 
 export default Navbar;
