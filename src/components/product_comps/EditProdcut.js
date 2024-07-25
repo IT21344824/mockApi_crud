@@ -34,10 +34,10 @@ const EditProduct = () => {
     };
 
     return (
-        <div style={{ width: "50%", margin: "auto" }}>
+        <div className='py-10 ' style={{ width: "50%", margin: "auto" }}>
             <div className="row m-2 p-3">
                 <p className="text-2xl font-bold whitespace-nowrap dark:text-white">Edit Product</p>
-                <hr />
+                <hr  className='rounded border-4'/>
                 <br />
                 <ProductForm initialValues={initialValues} onSubmit={handleEdit} />
             </div>

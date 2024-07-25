@@ -101,13 +101,13 @@ const Productlist = () => {
           return (
             <div>
               <NavLink to={`/edit/${productId}`}>
-                <button className="btn btn-primary mr-3 p-1 hover:text-slate-950 text-gray-600 bg-green-400 hover:bg-green-300 rounded">
-                  Edit
+                <button className="btn btn-primary mr-3 p-1 hover:text-slate-950 text-gray-600 bg-blue-400 hover:bg-blue-300 rounded">
+                <svg class="h-4 w-4 text-white-400"  width="4"  height="4"  viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M12 20h9" />  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" /></svg>
                 </button>
               </NavLink>
               <button className="btn btn-primary p-1 hover:text-slate-950 text-gray-600 bg-red-400 hover:bg-red-300 rounded"
                 onClick={() => deleteProduct(productId)}>
-                Delete
+                <svg class="h-4 w-4 text-white-400"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />  <line x1="9" y1="9" x2="15" y2="15" />  <line x1="15" y1="9" x2="9" y2="15" /></svg>
               </button>
             </div>
           );
@@ -123,7 +123,7 @@ const Productlist = () => {
   };
 
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center ">
       <div className="w-3/5">
         <MUIDataTable
           title={"Product List"}

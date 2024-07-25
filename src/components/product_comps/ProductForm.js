@@ -61,13 +61,15 @@ const ProductForm = ({ initialValues, onSubmit }) => {
             <div className='flex justify-between'>
                 <button
                     type="submit"
-                    className="btn btn-primary mt-3 mr-2 p-1 hover:text-slate-950 text-gray-600 bg-green-400 hover:bg-green-300 rounded"
+                    className="flex justify-center items-center gap-2 btn btn-primary mt-3 mr-2 p-1 hover:text-slate-950 text-gray-600 bg-blue-400 hover:bg-blue-300 rounded"
                 >
-                    Submit
+                    <svg class="h-5 w-5 text-white-400"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z" />  <polyline points="17 21 17 13 7 13 7 21" />  <polyline points="7 3 7 8 15 8" /></svg>
+                    save
                 </button>
                 <NavLink exact to="/">
                     <div className="btn btn-primary mt-3 p-1 hover:text-slate-950 text-gray-600 bg-red-400 hover:bg-red-300 rounded">
-                        Close
+                    <svg class="h-5 w-6 text-white-400"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />  <line x1="9" y1="9" x2="15" y2="15" />  <line x1="15" y1="9" x2="9" y2="15" /></svg>
+
                     </div>
                 </NavLink>
             </div>
