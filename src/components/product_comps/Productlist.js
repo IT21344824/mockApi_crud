@@ -123,7 +123,7 @@ const Productlist = () => {
   };
 
   return (
-    <div className="w-full flex justify-center ">
+    <div className="w-full flex justify-center bg-white dark:bg-gray-800 dark:text-gray-100">
       <div className="w-3/5">
         <MUIDataTable
           title={"Product List"}
@@ -131,7 +131,7 @@ const Productlist = () => {
           columns={columns}
           options={options}
           className="text-sm text-left rtl:text-right text-gray-500 
-          shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] bg-white dark:bg-gray-800 dark:text-gray-100 "
+          shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]  "
         />
       </div>
     </div>

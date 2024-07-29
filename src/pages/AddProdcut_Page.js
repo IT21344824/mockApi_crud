@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const AddProdcut_Page = () => {
   return (
-    <div >        
+    <div className='bg-white dark:bg-gray-800 dark:text-gray-100 dark:h-full'>        
         <AddProdcut />
     
     </div>
