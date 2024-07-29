@@ -130,8 +130,8 @@ const Productlist = () => {
           data={products}
           columns={columns}
           options={options}
-          className="text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 
-          shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
+          className="text-sm text-left rtl:text-right text-gray-500 
+          shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] bg-white dark:bg-gray-800 dark:text-gray-100 "
         />
       </div>
     </div>

@@ -5,11 +5,28 @@ import AddProdcut_Page from './pages/AddProdcut_Page';
 import EditProdcut_Page from './pages/EditProdcut_Page';
 import Layout_1 from './layouts/Layout_1';
 import { ThemeProvider } from './contexts/theme';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [themeMode, setThemeModel] = useState('light');
+
+  const darkTheme = () => {
+    setThemeModel('dark')
+  }
+
+  const lightTheme = () => {
+    setThemeModel('light')
+  }
+
+  useEffect(() => {
+    document.querySelector('html').classList.remove('dark', "light")
+    document.querySelector('html').classList.add(themeMode)
+
+  }, [themeMode])
+
   return (
-    <BrowserRouter>
-      <ThemeProvider>
+    <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout_1 />}>
             <Route index element={<ProductslistPG />} />
@@ -17,8 +34,9 @@ function App() {
             <Route path="edit/:id" element={<EditProdcut_Page />} />
           </Route>
         </Routes>
-      </ThemeProvider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </ThemeProvider>
+
   );
 }
 

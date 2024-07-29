@@ -34,14 +34,14 @@ const EditProduct = () => {
     };
 
     return (
-        <div className='py-10 ' style={{ width: "50%", margin: "auto" }}>
-            <div className="row m-2 p-3">
-                <p className="text-2xl font-bold whitespace-nowrap dark:text-white">Edit Product</p>
-                <hr  className='rounded border-4'/>
-                <br />
-                <ProductForm initialValues={initialValues} onSubmit={handleEdit} />
-            </div>
+        <div className='py-10' style={{ width: "50%", margin: "auto" }}>
+        <div className="row m-2 p-3 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+            <p className="text-2xl font-bold whitespace-nowrap text-gray-900 dark:text-white">Edit Product</p>
+            <hr className='rounded border-4 dark:border-gray-600' />
+            <br />
+            <ProductForm initialValues={initialValues} onSubmit={handleEdit} />
         </div>
+    </div>
     );
 };
 

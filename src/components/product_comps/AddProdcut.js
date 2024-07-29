@@ -26,7 +26,7 @@ const AddProduct_Page = () => {
 
     return (
         <div className='py-10 ' style={{ width: "50%", margin: "auto"  }}>
-            <div className="row m-2 p-3">
+            <div className="row m-2 p-3 bg-white dark:bg-gray-800 ">
                 <p className="text-2xl font-bold whitespace-nowrap dark:text-white">Add Product</p>
                 <hr  className='rounded border-4'/>
                 <br className='py-10 mt-10'/>
