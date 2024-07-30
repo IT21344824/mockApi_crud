@@ -35,7 +35,7 @@ const EditProduct = () => {
 
     return (
         <div className='py-10' style={{ width: "50%", margin: "auto" }}>
-        <div className="row m-2 p-3 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+        <div className="row m-2 p-3 dark:bg-gray-800 rounded-lg ">
             <p className="text-2xl font-bold whitespace-nowrap text-gray-900 dark:text-white">Edit Product</p>
             <hr className='rounded border-4 dark:border-gray-600' />
             <br />

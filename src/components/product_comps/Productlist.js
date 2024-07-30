@@ -59,11 +59,16 @@ const Productlist = () => {
   const columns = [
     {
       name: "id",
-      label: "No",
+      label: "No",    
       options: {
         filter: true,
         sort: true,
-       
+        setCellProps: () => ({
+          className:  'dark:bg-gray-300 dark:text-slate-700' 
+        }),
+        setCellHeaderProps: () => ({
+          className: ' dark:text-gray-200  dark:bg-gray-400 dark:font-bold'
+        })
       }
     },
     {
@@ -72,6 +77,12 @@ const Productlist = () => {
       options: {
         filter: true,
         sort: true,
+        setCellProps: () => ({
+          className:  'dark:bg-gray-300 dark:text-slate-700' 
+        }),
+        setCellHeaderProps: () => ({
+          className: ' dark:text-gray-200  dark:bg-gray-400 dark:font-bold'
+        })
       }
     },
     {
@@ -80,6 +91,12 @@ const Productlist = () => {
       options: {
         filter: true,
         sort: false,
+        setCellProps: () => ({
+          className:  'dark:bg-gray-300 dark:text-slate-700' 
+        }),
+        setCellHeaderProps: () => ({
+          className: ' dark:text-gray-200  dark:bg-gray-400 dark:font-bold'
+        })
       }
     },
     {
@@ -88,6 +105,12 @@ const Productlist = () => {
       options: {
         filter: true,
         sort: false,
+        setCellProps: () => ({
+          className:  'dark:bg-gray-300 dark:text-slate-700' 
+        }),
+        setCellHeaderProps: () => ({
+          className: ' dark:text-gray-200  dark:bg-gray-400 dark:font-bold'
+        })
       }
     },
     {
@@ -111,7 +134,13 @@ const Productlist = () => {
               </button>
             </div>
           );
-        }
+        },
+        setCellProps: () => ({
+          className:  'dark:bg-gray-300 dark:text-slate-700' 
+        }),
+        setCellHeaderProps: () => ({
+          className: ' dark:text-gray-200  dark:bg-gray-400 dark:font-bold'
+        })
       }
     },
   ];
@@ -130,8 +159,8 @@ const Productlist = () => {
           data={products}
           columns={columns}
           options={options}
-          className="text-sm text-left rtl:text-right text-gray-500 
-          shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]  "
+          className="text-sm  rtl:text-right text-gray-500 
+          shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] "
         />
       </div>
     </div>

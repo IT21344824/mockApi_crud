@@ -19,10 +19,10 @@ const ProductForm = ({ initialValues, onSubmit }) => {
     });
 
     return (
-        <form onSubmit={formik.handleSubmit} style={{ width: "100%" }} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <form onSubmit={formik.handleSubmit} style={{ width: "100%" }} className="bg-slate-50 shadow-md rounded px-8 pt-6 pb-8 mb-4  dark:bg-gray-400 ">
             <label className="block text-gray-700 text-sm font-bold mb-2">Name:</label>
             <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="dark:bg-gray-200 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="name"
                 name="name"
                 type="text"
@@ -35,7 +35,7 @@ const ProductForm = ({ initialValues, onSubmit }) => {
 
             <label className="mt-4 block text-gray-700 text-sm font-bold mb-2">Quantity:</label>
             <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="dark:bg-gray-200 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="number"
                 name="number"
                 type="number"
@@ -48,7 +48,7 @@ const ProductForm = ({ initialValues, onSubmit }) => {
 
             <label className="mt-4 block text-gray-700 text-sm font-bold mb-2">Description:</label>
             <textarea
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="dark:bg-gray-200 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="text"
                 name="text"
                 placeholder="Description"
@@ -58,7 +58,7 @@ const ProductForm = ({ initialValues, onSubmit }) => {
             />
             {formik.touched.text && formik.errors.text ? <div>{formik.errors.text}</div> : null}
 
-            <div className='flex justify-between'>
+            <div className='flex justify-between '>
                 <button
                     type="submit"
                     className="flex justify-center items-center gap-2 btn btn-primary mt-3 mr-2 p-1 hover:text-slate-950 text-gray-600 bg-blue-400 hover:bg-blue-300 rounded"
