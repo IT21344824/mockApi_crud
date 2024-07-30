@@ -1,11 +1,17 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import ProductslistPG from './pages/Productlist_PG';
-import AddProdcut_Page from './pages/AddProdcut_Page';
-import EditProdcut_Page from './pages/EditProdcut_Page';
+import ProductslistPG from './pages/Prodcuts_PG/Productlist_pg';
+import AddProdcut_Page from './pages/Prodcuts_PG/AddProdcut_pg';
+import EditProdcut_Page from './pages/Prodcuts_PG/EditProdcut_pg';
 import Layout_1 from './layouts/Layout_1';
 import { ThemeProvider } from './contexts/theme';
 import { useEffect, useState } from 'react';
+
+//user
+import Regiser_Page from './pages/Users/Register_pg';
+import SignIn_Page from './pages/Users/SignIn_pg';
+import Profile_pg from './pages/Users/Profile_pg';
+
 
 function App() {
   const [themeMode, setThemeModel] = useState('light');
@@ -28,6 +34,11 @@ function App() {
     <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>
       <BrowserRouter>
         <Routes>
+        <Route path="/register" element={<Regiser_Page />} />
+        <Route path="/SignIn" element={<SignIn_Page />} />
+        <Route path="/profile" element={<Profile_pg />} />
+
+
           <Route path="/" element={<Layout_1 />}>
             <Route index element={<ProductslistPG />} />
             <Route path="add" element={<AddProdcut_Page />} />

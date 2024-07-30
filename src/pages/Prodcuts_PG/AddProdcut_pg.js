@@ -1,5 +1,5 @@
 import React from 'react'
-import AddProdcut from '../components/product_comps/AddProdcut';
+import AddProdcut from '../../components/product_comps/AddProdcut';
 import { Link } from "react-router-dom";
 
 

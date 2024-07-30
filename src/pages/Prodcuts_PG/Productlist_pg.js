@@ -1,9 +1,9 @@
 import React from 'react'
-import Productslist from '../components/product_comps/Productlist';
+import Productslist from '../../components/product_comps/Productlist';
 import { Link } from "react-router-dom";
 
 
-const Productlist_PG = () => {
+const Productlist_pg = () => {
     return (
         <div className="flex justify-center items-center w-full pt-5 flex-col bg-white dark:bg-gray-800 dark:text-gray-100 h-full">
             <div className="flex justify-between w-3/5 mb-2  ">
@@ -19,4 +19,4 @@ const Productlist_PG = () => {
     )
 }
 
-export default Productlist_PG
+export default Productlist_pg
